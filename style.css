@@ -163,3 +163,27 @@
         rotate: 1turn;
     }
 }
+
+.ex-11-icon:hover {
+    animation-name: h-turn;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+@keyframes h-turn {
+    90% {
+        rotate: 315deg;
+    }
+}
+
+.ex-12-button:hover .ex-12-top-white {
+    animation-name: slide-r;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+@keyframes slide-r {
+    50% {
+        left: 69%;
+    }
+}
