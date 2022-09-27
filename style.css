@@ -73,8 +73,10 @@
     height: 20px;
 }
 
+/*******************************************/
+/**************** SOLUTIONS ****************/
+/*******************************************/
 
-/* SOLUTIONS */
 
 .ex-1-square {
     transition: all 1.5s;
@@ -182,8 +184,88 @@
     animation-timing-function: linear;
 }
 
+.ex-12-button:hover .ex-12-bottom-white {
+    animation-name: slide-l;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+
 @keyframes slide-r {
     50% {
         left: 69%;
+    }
+}
+
+@keyframes slide-l {
+    50% {
+        right: 69%;
+    }
+}
+
+.ex-13-button:hover .ex-13-top-white {
+    animation-name: top-slide;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+@keyframes top-slide {
+    
+    0% {
+        left: 10%;
+        top: -10px;
+    }
+    
+    25% {
+        left: 90%;
+        top: -10px
+    }
+
+    50% {
+        left: 90%;
+        top: 55px;
+    }
+
+    75% {
+        left: -10%;
+        top: 55px;
+    }
+
+    100% {
+        left: -10%;
+        top: -10px;
+    }
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+    animation-name: bottom-slide;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+@keyframes bottom-slide {
+    0% {
+        right: 20%;
+        bottom: -10px;
+    }
+    
+    25% {
+        right: 75%;
+        bottom: -10px;
+    }
+
+    50% {
+        right: 75%;
+        bottom: 55px;
+    }
+
+    75% {
+        right: -10%;
+        bottom: 55px;
+    }
+
+    100% {
+        right: -10%;
+        bottom: -10px;
     }
 }
