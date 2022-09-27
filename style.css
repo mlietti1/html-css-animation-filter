@@ -132,3 +132,34 @@
     filter: sepia(0.5) grayscale(0.4);
 }
 
+.ex-8-img { 
+    transition: all 2s;
+}
+
+.ex-8-img:hover {
+    filter: sepia(0.5) grayscale(0.3);
+    border-radius: 20px;
+}
+
+.ex-9-img {
+    transition: all 2s;
+}
+
+.ex-9-img:hover {
+    filter: sepia(0.7) grayscale(0.3);
+    scale: 1.5 1.5;
+    border-radius: 20px;
+}
+
+.ex-10-icon {
+    animation-name: turn;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes turn {
+    0% {
+        rotate: 1turn;
+    }
+}
